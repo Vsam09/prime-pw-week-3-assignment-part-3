@@ -36,8 +36,14 @@ console.log( 'Added 25 more parts', supplyChanges );
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log('6. Showing supplyChanges...');
-
-
+for (let i=0; i<supplyChanges.length; i++){
+  console.log( 'For loop', supplyChanges [ i ]);
+}
+let x = supplyChanges;
+console.log( 'x is the value array', supplyChanges);
+if ( supplyChanges[ x ] > '0' ){
+  console.log( 'Added x parts');
+}
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
