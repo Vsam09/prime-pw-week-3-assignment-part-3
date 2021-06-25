@@ -38,13 +38,15 @@ console.log( 'Added 25 more parts', supplyChanges );
 console.log('6. Showing supplyChanges...');
 for (let i=0; i<supplyChanges.length; i++){
   console.log( 'For loop', supplyChanges [ i ]);
-  let x = supplyChanges.length;
-if ( supplyChanges[ x ]  > '0' ){
-  console.log( 'Added', x, 'parts');
-  if (supplyChanges [ i ] == '0'){
+if ( supplyChanges[ i ]  > '0' ){
+  console.log( 'Added parts');
+  }
+  else if ( supplyChanges [ i ] == '0'){
     console.log( 'No Change');
   }
-  }
+  else if ( supplyChanges [ i ] <= '0'){
+      console.log( 'Removed parts' );
+    }
 }
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
