@@ -55,7 +55,11 @@ if ( supplyChanges[ x ]  > '0' ){
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
+const x = supplyChanges;
 
+for ( const supplyChanges of x ){
+  console.log('For loop', supplyChanges );
+}
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
