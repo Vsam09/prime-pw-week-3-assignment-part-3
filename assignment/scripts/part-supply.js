@@ -60,6 +60,9 @@ const x = supplyChanges;
 for ( const supplyChanges of x ){
   console.log('For loop', supplyChanges );
 }
+for ( value of x ){
+  console.log( 'Added', value, 'parts');
+}
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
