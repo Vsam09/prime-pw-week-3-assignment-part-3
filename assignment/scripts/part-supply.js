@@ -10,17 +10,17 @@ console.log( `Number of parts needed: ${partsNeeded}` );
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = ['3', '5', '-6', '0', '7', '11']
+let supplyChanges = [ 3, 5, -6, 0, 7, 11]
 console.log(`Array of supplyChanges ${supplyChanges}`);
 
 // 3. Console log the value of 'supplyChanges' at index 2
 console.log('3. Item at index 2 is:')
-console.log(`Item at index 2 is:' ${supplyChanges[ 1 ]}`);
+console.log(`Item at index 2 is: ${supplyChanges[ 1 ]}`);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges'
 //    array & console.log the value removed.
 console.log('4. Removed item:');
-let removeLastItem = supplyChanges.pop('11')
+let removeLastItem = supplyChanges.pop()
 console.log( `Removed item ${removeLastItem}`);
 console.log( `supplyChanges are now: ${supplyChanges}`);
 
@@ -38,9 +38,9 @@ console.log('6. Showing supplyChanges...');
 for (let i=0; i<supplyChanges.length; i++){
   console.log( 'For loop', supplyChanges [ i ]);
 
-let x = i;
+  let x = i;
 
-if ( supplyChanges[ x ]  > '0' ){
+  if ( supplyChanges[ x ]  > '0' ){
   console.log( `Added ${supplyChanges[ x ]} parts`);
   }
   else if ( supplyChanges [ x ] == '0'){
@@ -58,7 +58,7 @@ const x = supplyChanges;
 
 for ( const supplyChanges of x ){
   console.log(`For loop ${supplyChanges}` );
-}
+  }
 for ( value of x ) {
   console.log( `Added ${value} parts`);
   if ( value == '0' ){
@@ -74,10 +74,12 @@ let i = 0;
 const max = supplyChanges.length;
 
 while ( i < max ){
-  console.log( `while loop ${supplyChanges [ i ]}` ); i; i++;
+  console.log( `while loop ${supplyChanges [ i ]}` ); i;
+  i++;
 }
   if( i > max){
-  console.log( `Added ${supplyChanges [ i ]} parts`); i; i++;
+  console.log( `Added ${supplyChanges [ i ]} parts`); i;
+  i++;
 }
 
 // 9. Write a loop to determine the total number of parts available by
